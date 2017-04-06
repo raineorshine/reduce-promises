@@ -13,7 +13,25 @@ $ npm install --save reduce-promises
 ## Usage
 
 ```js
-import * as reducePromises from 'reduce-promises'
+const { reducePromises, accumulate } = require('reduce-promises')
+
+const functions = [
+  () => Bluebird.delay(100, 'a'),
+  () => Bluebird.delay(5, 'b'),
+  () => Bluebird.delay(20, 'c')
+]
+reducePromises(functions, _.concat, []) // ['a', 'b', 'c']
+```
+
+The above concat reduction is common enough to warrant a shorthand function.
+
+```
+const functions = [
+  () => Bluebird.delay(100, 'a'),
+  () => Bluebird.delay(5, 'b'),
+  () => Bluebird.delay(20, 'c')
+]
+accumulate(functions) // ['a', 'b', 'c']
 ```
 
 ## License
