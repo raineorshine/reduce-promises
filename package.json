@@ -1,0 +1,27 @@
+{
+  "name": "reduce-promises",
+  "version": "0.0.0",
+  "description": "Serially executes promise-returning functions and reduces the results with the given accumulator.",
+  "license": "ISC",
+  "repository": "https://github.com/raineorshine/reduce-promises",
+  "author": {
+    "name": "Raine Revere",
+    "email": "raineorshine@gmail.com",
+    "url": "https://github.com/raineorshine"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "promise",
+    "reduce"
+  ],
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+  "dependencies": {}
+}
