@@ -1,6 +1,6 @@
 {
   "name": "reduce-promises",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Serially executes promise-returning functions and reduces the results with the given accumulator.",
   "license": "ISC",
   "repository": "https://github.com/raineorshine/reduce-promises",
